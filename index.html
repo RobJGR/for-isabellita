@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message for Isabellita 🦦</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        blossom: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            400: '#fb7185',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                            800: '#9f1239',
+                            900: '#881337',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 182, 193, 0.4);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(3deg); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-rose-50 via-pink-50 to-red-100 min-h-screen flex items-center justify-center p-4 overflow-x-hidden text-gray-800">
+
+    <!-- Floating Background Petals/Hearts -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-10 left-10 text-rose-300 opacity-60 animate-float text-2xl">🌸</div>
+        <div class="absolute top-1/4 right-12 text-pink-300 opacity-60 animate-float text-3xl" style="animation-delay: 1s;">🦦</div>
+        <div class="absolute bottom-20 left-1/4 text-rose-400 opacity-50 animate-float text-2xl" style="animation-delay: 2s;">💖</div>
+        <div class="absolute bottom-1/3 right-1/4 text-pink-400 opacity-50 animate-float text-xl" style="animation-delay: 1.5s;">✨</div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="relative z-10 w-full max-w-xl mx-auto">
+        <!-- Envelope View -->
+        <div id="envelope-view" class="glass-card rounded-3xl p-8 shadow-2xl text-center transition-all duration-700">
+            <div class="w-24 h-24 bg-gradient-to-tr from-rose-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-rose-500/30 animate-pulse">
+                <span class="text-4xl">💌</span>
+            </div>
+            <h1 class="font-serif text-3xl font-bold text-rose-900 mb-2">A Letter for Isabellita</h1>
+            <p class="text-rose-700/80 mb-8 text-sm">From Robbie, with all my love ❤️‍🔥</p>
+            <button onclick="openLetter()" class="bg-rose-500 hover:bg-rose-600 text-white font-medium px-8 py-3.5 rounded-full shadow-lg shadow-rose-500/30 transition-all duration-300 transform hover:scale-105">
+                Open Letter ✨
+            </button>
+        </div>
+
+        <!-- Letter Content View (Hidden Initially) -->
+        <div id="letter-view" class="glass-card rounded-3xl p-6 sm:p-10 shadow-2xl hidden transition-all duration-700">
+            <div class="flex items-center justify-between border-b border-rose-200/60 pb-4 mb-6">
+                <div>
+                    <span class="text-xs font-semibold tracking-wider uppercase text-rose-500">To My Love</span>
+                    <h2 class="font-serif text-2xl font-bold text-rose-900">Isabellita 🦦</h2>
+                </div>
+                <div class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-xs font-medium">
+                    From Robbie 💖
+                </div>
+            </div>
+
+            <div class="prose prose-rose max-none text-gray-700 space-y-4 text-sm sm:text-base leading-relaxed max-h-[60vh] overflow-y-auto pr-2">
+                <p>Hola mi papita, thank you for writing me such sweet letter con unos cute otters en la portada 🦦</p>
+                <p>I'm sorry que I forgot to check my backpack until now, es que I've been so tired and busy with work que when I get home I just disconnect. Pero I do remember queer me estabas metiendo algo cuando salí del baño y te pusiste a reír y saltar como la cosita mas cuchi del mundo. That's a memory that's gonna stay with me forever, it was so funny and lovely.</p>
+                <p>I loved spending time with you in 4 different countries this trip, I love exploring places with you and getting to know stuff together. You make the trip much more special and enjoyable. Aunque cuando está tu familia te da pena agarrarme la mano y darme kisses. Pero at least we got some alone time in Seattle and we got to hug and cuddle a lot, which is the best thing ever.</p>
+                <p>I loved going to the Google offices with you and eating together, y jugando ping pong y el hockey game que I still can't believe you beat me twice 🏒 pero that just shows how fun it is when we are together! Pasear por el Microsoft campus estuvo cool e ir al market e ir a comer indian food en el lugar que nos gusta. It was the perfect trip. I also missed bañarnos juntos y echarte jabon en el body jijiji, I like it. Y dormir juntos es de best thing ever, it's such a peaceful and loving feeling.</p>
+                <p>Lo bueno es que nos vamos a ver juntos en Brasil soon and we are gonna be in a new country together and do some fun stuff, so I'm very excited. The fact that we are away right now doesn't mean we can't do stuff together, we can still play games or watch TV with each other like we always do.</p>
+                <p class="font-medium text-rose-900 pt-2">I love you so much and thank you for such a lovely letter, I miss you so so so much and I always go to sleep thinking about you and you are the sweetest and cutest girl in the whole world and I'm so lucky to be with you ❤️‍🔥</p>
+                <p class="italic text-rose-700">Can't wait de besarte en tu nariz otra vez.</p>
+            </div>
+
+            <div class="mt-8 pt-4 border-t border-rose-200/60 text-center">
+                <button onclick="celebrate()" class="bg-gradient-to-r from-rose-500 to-pink-500 text-white font-medium px-6 py-2.5 rounded-full shadow-md text-sm hover:opacity-90 transition-all">
+                    Send a Hug 💕
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function openLetter() {
+            document.getElementById('envelope-view').classList.add('opacity-0', 'scale-95', 'pointer-events-none', 'absolute');
+            setTimeout(() => {
+                document.getElementById('envelope-view').classList.add('hidden');
+                const letter = document.getElementById('letter-view');
+                letter.classList.remove('hidden');
+                setTimeout(() => letter.classList.add('opacity-100'), 50);
+            }, 300);
+        }
+
+        function celebrate() {
+            alert("✨ Hug sent straight to Robbie's heart! 🦦💖");
+        }
+    </script>
+</body>
+</html>
